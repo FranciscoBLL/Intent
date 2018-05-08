@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sistemas.intent.Clase3">
+
+    <TextView
+        android:id="@+id/recibirURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="URL"
+        android:textSize="30dp"/>
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </WebView>
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="match_parent"
+        android:onClick="regresarMain"
+        android:layout_height="wrap_content"
+        android:text="Regresar"/>
+
+</LinearLayout>
